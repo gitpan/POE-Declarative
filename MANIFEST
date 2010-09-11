@@ -1,17 +1,20 @@
 Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
 inc/Module/Install/AutoInstall.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Include.pm
-inc/Module/Install/Makefile.pm
 inc/Module/Install/MakeMaker.pm
+inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 lib/POE/Declarative.pm
 lib/POE/Declarative/Mixin.pm
-Makefile.PL
-MANIFEST			This list of files
-META.yml
 t/basic.t
 t/call-returns.t
 t/custom-heap.t
@@ -27,4 +30,6 @@ t/multiple-handlers.t
 t/object-states.t
 t/on-array.t
 t/passing-args.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
 t/two_sessions.t

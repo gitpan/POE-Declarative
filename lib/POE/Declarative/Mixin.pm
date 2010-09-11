@@ -2,12 +2,19 @@ use strict;
 use warnings;
 
 package POE::Declarative::Mixin;
+BEGIN {
+  $POE::Declarative::Mixin::VERSION = '0.09';
+}
 
 use POE::Declarative ();
 
 =head1 NAME
 
 POE::Declarative::Mixin - use different declarative POE packages together
+
+=head1 VERSION
+
+version 0.09
 
 =head1 SYNOPSIS
 

@@ -2,8 +2,9 @@ use strict;
 use warnings;
 
 package POE::Declarative;
-
-our $VERSION = '0.08';
+BEGIN {
+  $POE::Declarative::VERSION = '0.09';
+}
 
 require Exporter;
 our @ISA = qw( Exporter );
@@ -23,6 +24,10 @@ our @EXPORT = qw(
 =head1 NAME
 
 POE::Declarative - write POE applications without the mess
+
+=head1 VERSION
+
+version 0.09
 
 =head1 SYNOPSIS
 
@@ -49,8 +54,6 @@ POE::Declarative - write POE applications without the mess
 =head1 DESCRIPTION
 
 Taking the lessons learned from writing dispatchers and templates in L<Jifty> and L<Template::Declare>, I've applied the same declarative language to L<POE>. The goal is to make writing a POE application less painful so that I can concentrate on the more important aspects of my programming.
-
-This module is still B<VERY EXPERIMENTAL>. I just wrote it this evening and it needs lots of work.
 
 =head1 DECLARATIONS
 
@@ -401,16 +404,6 @@ sub setup {
         );
     }
 }
-
-=head1 TODO
-
-Lots and lots as of this writing. It doesn't handle much of the useful features of POE. I haven't tested it with other components. I haven't tested or made sure this properly supports inheritance.
-
-There's probably more that I haven't thought of yet.
-
-=head1 NONSENSE WORDS
-
-My examples in this module feature some of my favorite nonsense words. I've picked up quite a few of them having a small child.
 
 =head1 SEE ALSO
 
